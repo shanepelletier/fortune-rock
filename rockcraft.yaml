@@ -1,0 +1,20 @@
+name: shanepelletier-fortune
+summary: Print a random quote to the command line
+description: |
+  Use the `fortune` program to print a random quote to the command line.
+version: "latest"
+license: BSD-4-Clause
+
+base: bare
+build-base: ubuntu@24.04
+platforms:
+  amd64:
+
+parts:
+  fortune:
+    plugin: nil
+    stage-packages:
+      - fortune
+      - fortunes
+    organize:
+      usr/games/fortune: usr/bin/fortune
