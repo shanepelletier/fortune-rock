@@ -1,9 +1,9 @@
-name: shanepelletier-fortune
+name: fortune
 summary: Print a random quote to the command line
 description: |
   Use the `fortune` program to print a random quote to the command line.
 version: "latest"
-license: BSD-4-Clause
+license: MIT
 
 base: bare
 build-base: ubuntu@24.04
